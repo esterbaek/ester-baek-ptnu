@@ -168,6 +168,12 @@ h3{
    grid-template-columns: 1fr 1fr;
    grid-gap: 1em;
 }
+.cc{
+   grid-column: 1/3;
+   text-align: center;
+   color: aliceblue;
+   font-size: 110%;
+}
 .ptconsult{
    grid-column: 1/2;
    grid-row: 1/2;
@@ -177,6 +183,7 @@ h3{
    color:#947962;
    box-shadow: inset 5px 10px 50px #947962;
    transition: all 1s ease;
+   border: 2px solid #6b5b4d;
 }
 .ptconsult:hover{
    border-radius: 50%;
@@ -191,6 +198,7 @@ h3{
    color: #947962;
    box-shadow: inset 5px 10px 50px #947962;
    transition: all 1s ease;
+   border: 2px solid #6b5b4d;
 }
 .nuconsult:hover{
    border-radius: 50%;
@@ -205,6 +213,7 @@ h3{
    color: #947962;
    box-shadow: inset 5px 10px 50px #947962;
    transition: all 1s ease;
+   border: 2px solid #6b5b4d;
 }
 .ptnubundle:hover{
    border-radius: 50%;
@@ -223,7 +232,6 @@ h3{
    line-height: 1.8;
    font-size: 110%;
 }
-
 .sr{
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -399,4 +407,74 @@ footer {
    font-size: 110%;
    color: #947962;
    text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+   main{
+      margin: 1em;
+   }
+   .cc{
+      font-size: 90%;
+      text-align: center;
+      line-height: 1.4;
+   }
+   h2 {
+      font-size: 80%;
+   }
+   nav ul{
+      font-size: 80%;
+      flex-direction: column;
+      display: block;
+      text-align: center;
+      font-size: 110%;
+   }
+   nav a{
+      display: block;
+      padding: 2em;
+      border: 4px solid #947962;
+      box-shadow: 1px 5px 10px ;
+      background-color: antiquewhite;
+   }
+   nav li{
+      background-color: white;
+   }
+   nav li.x{
+      display: none;
+   }
+   nav li.y{
+      display: none;
+   }
+   .left{
+      display: none;
+   }
+   .maininfo{
+      display: block;
+   }
+   .right{
+      display: block;
+      flex-direction: column;
+   }
+   main.sr{
+      display: inline;
+   }
+   .center{
+      margin-top: 1em;
+   }
+   .pt, .nu, .bundle{
+      background-color: #947962;
+      margin: 1em;
+   }
+   h3{
+      margin-top: 1em;
+   }
+   .review{
+      display: inline;
+   }
+   .katie, .ava, .riley{
+      margin: 1em;
+      padding: 2em;
+   }
+   .rev{
+      margin: 1em;
+   }
 }
